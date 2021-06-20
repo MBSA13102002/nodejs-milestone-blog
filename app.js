@@ -32,5 +32,5 @@ app.get("/compose", (req, res)=>{
 
 app.listen(port,()=>{
     // console.log(`The application started successfully on port ${port}`);
-    console.log(`Server running at ${port}/`);
+    console.log("STARTED");
 });
