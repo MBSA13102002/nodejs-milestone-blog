@@ -31,7 +31,7 @@ app.get("/compose", (req, res)=>{
     res.render('compose.html')
 });
 
-app.listen(port,hostname,()=>{
-    // console.log(`The application started successfully on port ${port}`);
-    console.log(`Server running at http://${hostname}:${port}/`);
-});
+// app.listen(port,hostname,()=>{
+//     // console.log(`The application started successfully on port ${port}`);
+//     console.log(`Server running at http://${hostname}:${port}/`);
+// });
