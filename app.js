@@ -1,8 +1,7 @@
 const express = require("express");
 const bodyParser = require('body-parser');
 const app = express();
-const hostname = '127.0.0.1';
-const port = 80;
+const port = process.env.PORT || '5000';
 const path = require('path');
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extend:true}));
@@ -31,7 +30,7 @@ app.get("/compose", (req, res)=>{
     res.render('compose.html')
 });
 
-// app.listen(port,hostname,()=>{
-//     // console.log(`The application started successfully on port ${port}`);
-//     console.log(`Server running at http://${hostname}:${port}/`);
-// });
+app.listen(port,()=>{
+    // console.log(`The application started successfully on port ${port}`);
+    console.log(`Server running at ${port}/`);
+});
