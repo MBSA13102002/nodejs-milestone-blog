@@ -9,7 +9,7 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 // app.set('views', __dirname);
 app.get("/", (req, res)=>{ 
-    res.sendFile(path.join(__dirname+'/views/index.html'));
+    res.render('index.html')
 });
 
 app.get('/post/:postslug', (req, res)=>{
