@@ -2,6 +2,10 @@ const express = require("express");
 const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT || 3000;
+<<<<<<< HEAD
+=======
+const path = require('path');
+>>>>>>> 07aadfccb68ca6ab55014b7cd8520ccb20e0e07d
 app.use(express.static("public"));
 // app.use(bodyParser.urlencoded({extend:true}));
 app.engine('html', require('ejs').renderFile);
